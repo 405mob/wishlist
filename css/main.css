@@ -1,0 +1,64 @@
+body {
+  font-size: 15px;
+  background-color: rgb(245, 244, 242);
+}
+
+header {
+  margin: 20px; 
+}
+.sticky {
+  display: flex;
+  width: 350px; 
+  height: 350px; 
+  padding: 20px; 
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  margin: 20px;
+  background-color: white; 
+  /* margin-bottom: 10px; */
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+ 
+}
+
+/* almost identical properties to stickies */
+.result {
+  /* display: flex; */
+  width: 350px; 
+  height: 350px; 
+  padding: 50px; 
+  margin: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white; 
+  /* margin-bottom: 10px; */
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+ 
+}
+
+.all-stickies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.up-img {
+  max-width: 200px; 
+  max-height: 200px; 
+}
+
+.open-form {
+  border:none;
+  background:none;
+  font-size: 25px;
+}
+
+.info {
+  max-width: 30px;
+}
+
+/* result in aligned form input values */
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }

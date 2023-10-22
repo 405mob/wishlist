@@ -1,0 +1,65 @@
+<!-- <div>
+  <div style="left: 65px; top: 121px; position: absolute; color: black; font-size: 30px; font-family: Inter; font-weight: 400; word-wrap: break-word">wishlist</div>
+  <div style="width: 1350px; height: 750px; left: 50px; top: 200px; position: absolute; background: #F3F3F3"></div>
+  <div style="width: 350px; height: 350px; left: 100px; top: 250px; position: absolute; background: white; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)"></div>
+  <div style="width: 350px; height: 350px; left: 500px; top: 250px; position: absolute; background: #C6C6C6"></div>
+  <div style="left: 660px; top: 402px; position: absolute; color: black; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">+</div>
+</div> -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Wishlist Notes</title>
+  <link rel="stylesheet" href="./css/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@1,900&display=swap" rel="stylesheet">
+
+  <!-- link rel="shortcut icon" href="favicon.ico" type="image/icon" -->
+</head>
+
+<body>
+  <header>
+    <h1><u>wishlist</u></h1>
+  </header>
+
+  <div id = "infoContainers">
+  <div class="sticky">
+      <div class="centering">
+        <button class="open-form" id="open-form">+</button>
+      </div>
+
+      <div id="form" style="display: none;">
+        <p>enter info</p> <br>
+        <form id="dataForm">
+            <p>
+              <label for="dataInput">name:</label> <input type="text" id="dataInput" name="dataInput" required> 
+            </p>
+
+            <p>
+              <label for="linkInput">link:</label> <input type="link" id="linkInput" name="linkInput" required> 
+            </p>
+
+            <p>
+              <label for="imgInput">img:</label> 
+              <input type="file" id="imgInput" name="imgInput" accept="image/*" required>
+              <span id="filename"></span>
+            </p>
+            
+            <br></br>
+            <button type="submit">submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="infoContainers"></div>
+  
+  <script src="notes.js"></script>
+
+</body>
+</html>
