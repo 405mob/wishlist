@@ -14,6 +14,7 @@ const dataForm = document.getElementById('dataForm');
 const dataInput = document.getElementById('dataInput');
 const linkInput = document.getElementById('linkInput');
 const imgInput = document.getElementById('imgInput');
+const costInput = document.getElementById('costInput');
 
 const filename = document.getElementById('filename'); 
 
@@ -37,6 +38,7 @@ dataForm.addEventListener('submit', function (e) {
     const inputData = dataInput.value;
     const inputLink = linkInput.value;
     const inputImg = imgInput.files[0];
+    const inputCost = costInput.value;
     const inputImgSource = URL.createObjectURL(inputImg);
 
 //    const inputImgSouce = `file://${inputImg}`;
@@ -73,6 +75,18 @@ dataForm.addEventListener('submit', function (e) {
     imageElement.textContent = "";
     newcontainer.appendChild(imageElement);
 
+    const lineBreak4 = document.createElement('br');
+    newcontainer.appendChild(lineBreak4);
+    // cost element
+    // add text ekement 
+    const costElem = document.createElement('span');
+    costElem.textContent = inputCost;
+    newcontainer.appendChild(costElem);
+
+
+    // kjsdfhkjdhfkjsdhfkj
+
+
     console.log(inputImgSource);
 
    // newcontainer.textContent = inputData;
@@ -95,6 +109,7 @@ dataForm.addEventListener('submit', function (e) {
     dataInput.value = '';
     linkInput.value = '';
     imgInput.value = '';
+    costInput.value = '';
 
 
     // Optionally, clear the input field
